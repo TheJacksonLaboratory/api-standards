@@ -1,0 +1,80 @@
+site_name: API Standards
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/git-alt
+    annotation: material/plus-circle
+  palette:
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: white
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: blue grey
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+    - navigation.indexes
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+extra_css:
+  - assets/stylesheets/extra.css
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  # Full file snippets, different but similar to `mdx_include`
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # Additional extensions not previously used
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+plugins:
+  - git-authors
+  - search
+extra:
+  version:
+    provider: mike
+nav:
+  - Home: index.md
+  # - Quickstart: quick-start.md
+  - Standards Documents:
+    - "1 HTTP Standards": 01-http-standards.md
+    - "2 Domain Names": 02-domain-names.md
+    - "3 Endpoint Names": 03-endpoint-naming.md
+    - "4 OpenAPI Schemas": 04-openapi-schemas.md
+    - "5 Versioning": 05-api-versioning.md
+    - "6 Monitoring": 06-api-monitoring.md
+    - "7 Response Errors": 07-error-handling.md

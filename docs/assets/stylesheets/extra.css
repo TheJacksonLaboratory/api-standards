@@ -1,0 +1,29 @@
+:root {
+    /*--md-default-bg-color: #B3E5FC;*/
+    --jax-process-blue: #008FC0;
+    --jax-process-blue-t25: #BFE3EF;
+    --jax-288-c: #05396B;
+    --jax-black: #2C2A29;
+    --jax-432-c: #333F48;
+    --jax-429-c: #A2AAAD;
+    --jax-427-c: #D0D3D4;
+    --md-button-primary-color: white;
+}
+
+.md-typeset .md-button {
+    color: var(--jax-process-blue);
+}
+
+.md-typeset .md-button--primary {
+    color: var(--md-button-primary-color);
+    background-color: var(--jax-process-blue);
+    border-color: var(--jax-process-blue);
+}
+
+
+[data-md-color-scheme=slate] {
+    --md-button-primary-color: #FDFEFE;
+    /*--md-primary-fg-color: var(--jax-black);*/
+    --md-default-bg-color: var(--jax-432-c);
+    --md-typeset-a-color: var(--jax-process-blue);
+}
